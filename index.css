@@ -1,0 +1,407 @@
+
+.item-container{
+    display: flex;
+    justify-content: center;
+}
+ol li{
+    display: flex;
+    flex-flow: row;
+}
+.first{
+    display: flex;
+    top: 110px;
+}
+.item{
+    margin: 30px;
+    width: 100px;
+    height: 100px;
+    background-color:maroon;
+}
+.one{
+    animation-name: item-one;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    background-color: teal;
+}
+.two{
+    animation-name: item-two;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    background-color: steelblue;
+  }
+  .three{
+    animation-name: item-three;
+    background-color: teal;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+  }
+  .four {
+    animation-name: four;
+    animation: 3s infinite linear;
+  }
+  .a {
+    background-color: steelblue;
+    border: 2px solid rgb(29, 55, 77);
+    animation-name: a;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+  }
+  
+  .b {
+    background-color: darkred;
+    border: 2px solid rgb(94, 13, 13);
+    animation-name: b;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+  }
+  
+  .c {
+    background-color: green;
+    border: 2px solid rgb(23, 85, 23);
+    animation: c 4s infinite;
+  }
+  @keyframes item-one {
+    25% {
+      transform: skewX(10deg);
+    }
+    50% {
+      transform: skewX(-10deg);
+    }
+    75% {
+      transform: skewX(10deg);
+    }
+  }
+  @keyframes item-two {
+    25% {
+      transform: skewY(20deg);
+    }
+    50% {
+      transform: skewY(-20deg);
+    }
+    75% {
+      transform: skewY(20deg);
+    }
+  }
+  
+  @keyframes item-three {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  @keyframes a {
+    25% {
+      transform: scaleY(60%);
+    }
+  }
+  @keyframes b {
+    25% {
+      transform: scaleX(60%);
+    }
+  }
+  @keyframes c {
+    10% {
+      transform: rotate(-45deg);
+    }
+  
+    90% {
+      transform: rotate(35deg);
+    }
+  }
+
+/**/**/**/**/**/**
+.item-container2{
+  display: flex;
+
+}
+ol li{
+  display: flex;
+  flex-flow: row;
+}
+.item01{
+  display: flex;
+  position: relative;
+  left: 550px;
+  padding: 5px;
+  margin: 10px;
+  height: 100px;
+  width: 100px;
+  background-color: green;
+  transition: all;
+  transition-duration: 2s;
+}
+.item01:hover{
+     height: 350px;
+     width: 350px;
+     background-color: green;
+
+}
+.item02{
+  display: flex;
+  position: relative;
+  left: 550px;
+  padding: 5px;
+  margin: 10px;
+  height: 100px;
+  width: 100px;
+  background-color: green;
+  transition: all;
+  transition-duration: 4s;
+}
+.item02:hover{
+     height: 150px;
+     width: 250px;
+     background-color: green;
+
+}
+.item03{
+  display: flex;
+  position: relative;
+  left: 550px;
+  padding: 5px;
+  margin: 10px;
+  height: 100px;
+  width: 100px;
+  background-color: green;
+  transition: all;
+  transition-duration: 2s;
+}
+.item03:hover{
+     height: 100px;
+     width: 450px;
+     background-color: green;
+
+}
+.item04{
+  display: flex;
+  position: relative;
+  left: 550px;
+  padding: 5px;
+  margin: 10px;
+  height: 100px;
+  width: 100px;
+  background-color: green;
+  transition: all;
+  transition-duration: 2s;
+}
+.item04:hover{
+     height: 100px;
+     width: 250px;
+     background-color: green;
+
+}
+.item05{
+  display: flex;
+  position: relative;
+  left: 550px;
+  padding: 5px;
+  margin: 10px;
+  height: 100px;
+  width: 100px;
+  background-color: green;
+  transition: all;
+  transition-duration: 2s;
+}
+.item05:hover{
+     height: 100px;
+     width: 350px;
+     background-color: green;
+
+}
+.item06{
+  display: flex;
+  position: relative;
+  left: 550px;
+  padding: 5px;
+  margin: 10px;
+  height: 100px;
+  width: 100px;
+  background-color: green;
+  transition: all;
+  transition-duration: 2s;
+}
+.item06:hover{
+     height: 100px;
+     width: 150px;
+     background-color:brown;
+     border-radius: 50%;
+
+}
+/*/*/*/*/*/**/
+.animation{
+  background-image: url(./sky.jpg);
+  background-repeat: no-repeat;
+  z-index: -1;
+  overflow-x: hidden;
+}
+.sun{
+  width: 400px;
+  position: absolute;
+  left: 70%;
+  top: 150px;
+
+}
+.sun img{
+  width: 200px;
+  animation: sun 120s linear infinite;
+}
+.road{
+  position: absolute;
+  width: 500%;
+  height: 200px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  background-repeat: repeat-x;
+  background-image: url(./road.jpg);
+  filter: brightness(50%);
+  animation: road 6s linear infinite;
+}
+.city{
+  position: absolute;
+  width: 300%;
+  height: 200px;
+  top: 45%;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  background-repeat: repeat-x;
+  background-image: url(./city.png);
+  filter: brightness(50%);
+  animation: road 8s linear infinite;
+}
+.skyscraper{
+  position: absolute;
+  width: 500%;
+  height: 200px;
+  bottom: 200px;
+  left: 0px;
+  right: 0px;
+  background-image: url(./car.png);
+  animation: skyscraper 30s linear infinite;
+}
+.car{
+  position: absolute;
+  width: 400px;
+  bottom: 100px;
+  left: 40%;
+  transform: translateX(-50%);
+  z-index: 2;
+  
+
+}
+.car img{
+  width: 100%;
+  animation: car 1s linear infinite;
+}
+@keyframes car {
+  100%{transform: translateY(-1px);}
+  50%{transform: translateY(1px);}
+  0%{transform: translateY(-1px);}
+}
+.wheel{
+  position: absolute;
+  left: 50%;
+  bottom: 175px;
+  transform: translateX(-50%);
+  z-index: 2;
+}
+.wheel img {
+  width: 70px;
+  height: 70px;
+  animation: wheel 1s linear infinite;
+}
+@keyframes wheel
+{
+  100%{
+      transform: rotate(360deg);
+  }
+}
+.backwheel{
+  left: -315px;
+  position: absolute;
+}
+.frontwheel{
+  left: -70px;
+  position: absolute;
+}
+.flag{
+  position: absolute;
+  left: 50%;
+  bottom: 245px;
+  z-index: 3;
+}
+.flag img{
+  width: 80px;
+  height: 72px;
+  
+}
+.indiaflag{
+  position: absolute;
+  left: -50px;
+}
+.text{
+  display: flex;
+  margin-left: 36%;
+  font-size: 50px;
+  font-weight: 800;
+}
+.text1{
+  margin-left: 0.4em;
+  background-color: orange;
+}
+.text2{
+  margin-left: 0.4em;
+  background-color: white;;
+}
+.text3{
+  margin-left: 0.4em;
+  background-color: green;
+}
+@keyframes sun {
+  100%{
+      transform: translateX(-400px);
+  }
+}
+
+@keyframes flag {
+  50%{transform: translateY(-2px);}
+  75%{transform: translateX(-500px);}
+  100%{transform: translateY(0px) translateX(0px) ;}
+}
+
+
+@keyframes skyscraper {
+  100%{transform: translateX(-2400px);}
+}
+@keyframes road {
+  100%{transform: translateX(-3400px);}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
